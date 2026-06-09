@@ -1,0 +1,54 @@
+#include<stdio.h>
+int main()
+{
+    int i ,n,sum=0;
+    printf("Enter the number");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+      sum+=i;
+    printf("sum of first %d natural numbers is %d",n,sum);
+    return 0;
+}
+  
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter any number");
+    scanf("%d",&n);
+    for(i=1;i<=10;i++)
+      printf("%d*%d=%d\n",n,i,n*i);
+    return 0;
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int n,i, fact=1;
+    printf("Enter any number");
+    scanf("%d",&n);
+    if(n<0)
+      printf("Factorial does not exist");
+    else
+    { { for(i=1;i<=n;i++)
+         fact*=i;
+        }
+      printf("Factorial od %d is %d",n,fact);
+    }
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    int n,count=0;
+    printf("Enter any integer");
+    scanf("%d",&n);
+    do{
+        n/=10;
+        count++;
+    }while(n!=0);
+    printf("Number of digits is %d",count);
+    return 0;
+}
