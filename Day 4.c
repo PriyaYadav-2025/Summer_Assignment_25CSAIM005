@@ -81,7 +81,6 @@ int main()
         p /= 10;
         ++count;
       }
-
      p = n;
      while (p != 0)
      {
