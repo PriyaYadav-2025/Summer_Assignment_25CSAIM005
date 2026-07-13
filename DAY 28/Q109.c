@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-struct Book {
+ struct Book {
     int id;
     char name[50];
     int issued;
